@@ -6,7 +6,15 @@ import { useState } from 'react';
   
 export default function Form(){
 
-  
+  const [height, setHeight] = useState( null )
+  const [weight, setWeight] = useState(null)
+  const [messageImc, setMessageImc] = useState("preencha peso e altura")
+  const [Imc, setImc] = useState(null)
+  const [TextButton, setTextButton] = useState("Calcular")
+
+  function imccalculator(){
+    return setImc((weight/(height*height)) .toFixed(2))
+  }
 
     return(
 <View>
