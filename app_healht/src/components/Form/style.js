@@ -30,6 +30,22 @@ const styles = StyleSheet.create({
         height:40,
         margin:12,
         paddingLeft:10,
+    },
+     ButtonCalculator:{
+      borderRadius:50,
+      alignItems:"center",
+      justifyContent:"center",
+      widht:"90%",
+      paddingBottom:14,
+      paddingTop:14,
+      backgroundColor:"#32cd32",
+      marginLeft:12,
+       margin:30,
+
+     },
+    textButtonCalculator:{
+        fontSize:20,
+        color:"#fff",
     }
     });
 export default styles
