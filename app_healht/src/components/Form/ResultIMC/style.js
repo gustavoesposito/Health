@@ -8,9 +8,12 @@ const styles = StyleSheet.create({
         borderRadius:50,
         alignItems:"center",
         widht:"100%",
+      
+    },
+    numberImc:{
         fontSize:48,
-      color:"#32cd32",
-      fontWeight:"bold",
+        color:"#32cd32",
+        fontWeight:"bold",
     },
     information:{
       fontSize:18,

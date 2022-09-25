@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {View, Text, TextInput,TouchableOpacity} from 'react-native';
+import {View, Text, TextInput,TouchableOpacity,   } from 'react-native';
 import ResultImc from "./ResultIMC";
 import styles from "./style";
    
@@ -44,6 +44,7 @@ export default function Form(){
         value={height}
         placeholder="Digite Sua Altura"
         keyboardType="numeric"
+          
         />
 
         <Text style={styles.formLabel}>Peso</Text>
@@ -53,6 +54,7 @@ export default function Form(){
          value={weight}
         placeholder="Digite Seu Peso"
         keyboardType="numeric"
+          
          />
           <TouchableOpacity
           style={styles.ButtonCalculator}
