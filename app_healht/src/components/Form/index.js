@@ -35,7 +35,8 @@ export default function Form(){
   }
 
     return(
-<View style={styles.formContent}>
+<View
+style={styles.formContent}>
      <View style={styles.form}>
         <Text style={styles.formLabel}>Altura</Text>
         <TextInput 
