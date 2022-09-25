@@ -4,4 +4,6 @@ const styles = StyleSheet.create({
     Title: {
         
     },
-})
+});
+
+export default styles
