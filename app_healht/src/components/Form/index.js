@@ -4,7 +4,9 @@ import {
   View, 
   Text, 
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
+  Pressable,
+  Keyboard
  } from 'react-native';
 import ResultImc from "./ResultIMC";
 import styles from "./style";
@@ -53,7 +55,8 @@ export default function Form(){
    }
 
     return(
-<View
+<Pressable
+onPress={Keyboard.dismiss}
 style={styles.formContent}>
      <View style={styles.form}>
         <Text style={styles.formLabel}>Altura</Text> 
@@ -89,6 +92,6 @@ style={styles.formContent}>
           </TouchableOpacity>
     </View>
   <ResultImc messageResultImc={messageImc} resultImc={imc}/>
-</View>
+</Pressable>
     );
 }
