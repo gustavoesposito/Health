@@ -39,6 +39,7 @@ export default function Form(){
      <View style={styles.form}>
         <Text style={styles.formLabel}>Altura</Text>
         <TextInput 
+        style={styles.input}
        onChangeText={(newHeight) => setHeight(newHeight)}
         value={height}
         placeholder="Digite Sua Altura"
@@ -47,6 +48,7 @@ export default function Form(){
 
         <Text style={styles.formLabel}>Peso</Text>
         <TextInput 
+         style={styles.input}
         onChangeText={(newWeight) => setWeight(newWeight)}
          value={weight}
         placeholder="Digite Seu Peso"
