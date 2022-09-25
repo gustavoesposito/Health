@@ -8,15 +8,15 @@ const styles = StyleSheet.create({
         height:"100%",
         backgroundColor:"#fff",
         alignItems:"center",
-        marginTop:30,
+        marginTop:10,
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
     },
     form:{
         width:"100%",
         height:"auto",
-        marginTop:30,
-        padding:10,
+        marginTop:10,
+        padding:0,
     },
     formLabel:{
         color:"#000",
