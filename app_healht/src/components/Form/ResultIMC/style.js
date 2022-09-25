@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
       fontSize:18,
       color:"#32cd32",
       fontWeight:"bold",
-    }
+    },
 });
 
 export default styles
