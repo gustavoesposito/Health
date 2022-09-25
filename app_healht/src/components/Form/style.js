@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
       paddingTop:14,
       backgroundColor:"#32cd32",
       marginLeft:12,
-       margin:30,
+       margin:10,
 
      },
     textButtonCalculator:{

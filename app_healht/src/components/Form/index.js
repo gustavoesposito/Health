@@ -1,5 +1,11 @@
 import React, {useState} from "react";
-import {View, Text, TextInput,TouchableOpacity } from 'react-native';
+import {
+  Vibration,
+  View, 
+  Text, 
+  TextInput,
+  TouchableOpacity
+ } from 'react-native';
 import ResultImc from "./ResultIMC";
 import styles from "./style";
    
@@ -24,8 +30,8 @@ export default function Form(){
 
   function verificationImc(){
     if(imc == null ){
-
-      setErrorMessage("**")
+      Vibration.vibrate()
+      setErrorMessage("*CAMPO REQUIRIDO*")
 
 }  }
 
@@ -50,7 +56,7 @@ export default function Form(){
 <View
 style={styles.formContent}>
      <View style={styles.form}>
-        <Text style={styles.formLabel}>Altura</Text>
+        <Text style={styles.formLabel}>Altura</Text> 
         <Text style={styles.errorMessage}>{errorMessage}</Text>
         <TextInput 
         style={styles.input}
