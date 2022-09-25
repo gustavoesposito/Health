@@ -1,5 +1,4 @@
-import { StyleSheet } from "react-native ";
-
+import { StyleSheet  } from 'react-native';
 const styles = StyleSheet.create({
     boxTitle: {
         alignItems:"center",
@@ -8,7 +7,7 @@ const styles = StyleSheet.create({
     },
 
     textTitle: {
-        color:"#ff0043",
+        color:"#FF0043",
         fontSize:24,
         fontWeight:"bold",
     }
