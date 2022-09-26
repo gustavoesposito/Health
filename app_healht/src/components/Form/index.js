@@ -114,7 +114,8 @@ export default function Form(){
   renderItem={({item}) => {
     return(
       <Text>
-        {item.imc}
+         Resultado IMC =
+         {item.imc}
       </Text>
     )
   }}
