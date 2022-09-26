@@ -101,6 +101,7 @@ export default function Form(){
             onPress={() => {
             validationImc()
           }}
+        
           >
             <Text
             style={styles.textButtonCalculator}
@@ -113,15 +114,18 @@ export default function Form(){
   data={imcList.reverse()}
   renderItem={({item}) => {
     return(
+      <Text> 
       <Text>
          Resultado IMC =
          {item.imc}
       </Text>
+      </Text>
     )
   }}
-  >
-
-  </FlatList>
+  keyExtractor={(item) => {
+    item.id
+  }}
+  />
   </View> 
   );
 }
