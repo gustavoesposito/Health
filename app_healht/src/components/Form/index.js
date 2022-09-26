@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   Pressable,
+  FlatList,
   Keyboard
  } from 'react-native';
 import ResultImc from "./ResultIMC";
@@ -19,6 +20,7 @@ export default function Form(){
   const [imc, setImc] = useState(null)
   const [TextButton, setTextButton] = useState("Calcular")
   const [errorMessage, setErrorMessage] = useState(null)
+  const [imcList, setImcList] = useState([])
 
 
   function imcCalculator(){
