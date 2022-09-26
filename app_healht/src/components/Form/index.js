@@ -25,7 +25,9 @@ export default function Form(){
 
   function imcCalculator(){
     let heightFormat = height.replace(",",".")
-    return setImc((weight / (heightFormat * heightFormat)).toFixed(2))
+    let totalmc =((weight / (heightFormat * heightFormat)).toFixed(2));
+    setImcList((arr) => [...arr,{id: new Date().getTime(), imc:totalmc}])
+    setImc(totalmc)
   }
 
   function verificationImc(){
@@ -106,6 +108,19 @@ export default function Form(){
           </TouchableOpacity>
   </View>
   } 
+  <FlatList
+  style={styles.listImcs}
+  data={imcList.reverse()}
+  renderItem={({item}) => {
+    return(
+      <Text>
+        {item.imc}
+      </Text>
+    )
+  }}
+  >
+
+  </FlatList>
   </View> 
   );
 }
