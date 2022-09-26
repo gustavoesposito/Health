@@ -114,11 +114,12 @@ export default function Form(){
   data={imcList.reverse()}
   renderItem={({item}) => {
     return(
-      <Text> 
-      <Text>
+      <Text style={styles.resultImcItem}> 
+      <Text style={styles.textResultItemList}>
          Resultado IMC =
-         {item.imc}
+          
       </Text>
+      {item.imc}
       </Text>
     )
   }}
